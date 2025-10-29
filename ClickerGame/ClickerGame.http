@@ -1,0 +1,6 @@
+@ClickerGame_HostAddress = http://localhost:5038
+
+GET {{ClickerGame_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
