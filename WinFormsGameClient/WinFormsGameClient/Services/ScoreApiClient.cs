@@ -5,31 +5,23 @@ namespace WinFormsGameClient.Services
 {
     public class ScoreApiClient
     {
-        private readonly HttpClient _http;
-        private const string BASE_URL = "https://localhost:7173"; // ganti sesuai port API kamu
+        private readonly HttpClient _http = new HttpClient();
+        private readonly string _baseUrl = "http://localhost:5038/api/scores"; // pastikan portnya benar
 
-        public ScoreApiClient()
+        public async Task<List<PlayerScore>> GetTopAsync(int top)
         {
-            _http = new HttpClient
-            {
-                BaseAddress = new Uri(BASE_URL),
-                Timeout = TimeSpan.FromSeconds(10)
-            };
+            var response = await _http.GetAsync($"{_baseUrl}");
+            response.EnsureSuccessStatusCode();
+
+            var data = await response.Content.ReadFromJsonAsync<List<PlayerScore>>();
+            return data!.OrderByDescending(x => x.Score).Take(top).ToList();
         }
 
-        public async Task<List<PlayerScore>> GetTopAsync(int n = 10)
+        public async Task SubmitAsync(string name, int score)
         {
-            var res = await _http.GetAsync($"/api/scores/top/{n}");
-            res.EnsureSuccessStatusCode();
-            var data = await res.Content.ReadFromJsonAsync<List<PlayerScore>>();
-            return data ?? new List<PlayerScore>();
-        }
-
-        public async Task SubmitAsync(string playerName, int score)
-        {
-            var payload = new { playerName, score };
-            var res = await _http.PostAsJsonAsync("/api/scores", payload);
-            res.EnsureSuccessStatusCode();
+            var body = new PlayerScore { PlayerName = name, Score = score };
+            var response = await _http.PostAsJsonAsync(_baseUrl, body);
+            response.EnsureSuccessStatusCode();
         }
     }
 }

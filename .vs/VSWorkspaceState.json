@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ClickerGame",
+    "\\ClickerGame\\ClickerGame",
+    "\\ClickerGame\\ClickerGame\\Controllers",
+    "\\ClickerGame\\ClickerGame\\Data",
+    "\\WinFormsGameClient",
+    "\\WinFormsGameClient\\WinFormsGameClient",
+    "\\WinFormsGameClient\\WinFormsGameClient\\Models",
+    "\\WinFormsGameClient\\WinFormsGameClient\\Services"
+  ],
+  "SelectedNode": "\\WinFormsGameClient\\WinFormsGameClient\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repository-Lily\\Jarkom\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj": {}
+    "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj": {}
   },
   "projects": {
-    "D:\\Repository-Lily\\Jarkom\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj": {
+    "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repository-Lily\\Jarkom\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj",
+        "projectUniqueName": "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj",
         "projectName": "WinFormsGameClient",
-        "projectPath": "D:\\Repository-Lily\\Jarkom\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj",
-        "packagesPath": "C:\\Users\\athal\\.nuget\\packages\\",
-        "outputPath": "D:\\Repository-Lily\\Jarkom\\WinFormsGameClient\\WinFormsGameClient\\obj\\",
+        "projectPath": "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\WinFormsGameClient\\WinFormsGameClient\\WinFormsGameClient.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\WinFormsGameClient\\WinFormsGameClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\athal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.6.15, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

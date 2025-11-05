@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repository-Lily\\Jarkom\\ClickerGame\\ClickerGame\\ClickerGame.csproj": {}
+    "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\ClickerGame\\ClickerGame\\ClickerGame.csproj": {}
   },
   "projects": {
-    "D:\\Repository-Lily\\Jarkom\\ClickerGame\\ClickerGame\\ClickerGame.csproj": {
+    "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\ClickerGame\\ClickerGame\\ClickerGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repository-Lily\\Jarkom\\ClickerGame\\ClickerGame\\ClickerGame.csproj",
+        "projectUniqueName": "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\ClickerGame\\ClickerGame\\ClickerGame.csproj",
         "projectName": "ClickerGame",
-        "projectPath": "D:\\Repository-Lily\\Jarkom\\ClickerGame\\ClickerGame\\ClickerGame.csproj",
-        "packagesPath": "C:\\Users\\athal\\.nuget\\packages\\",
-        "outputPath": "D:\\Repository-Lily\\Jarkom\\ClickerGame\\ClickerGame\\obj\\",
+        "projectPath": "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\ClickerGame\\ClickerGame\\ClickerGame.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\Tugas\\Semester 5\\Pemrograman Jaringan Komputer\\Project 2\\ClickerGame\\ClickerGame\\ClickerGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\athal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,24 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.6.15, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
